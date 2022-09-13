@@ -99,7 +99,7 @@ var deepDiffMapper = function () {
 }();
 
 var removeSpecialChars = function (s) {
-  return s.replace(/\./g, "").replace(/:/g, "").replace(/#/g, "").replace(/\//g, "").replace(" ", "");
+  return s.replace(/\./g, "").replace(/:/g, "").replace(/#/g, "").replace(/\//g, "").replace(" ", "").replace("-", "");
 };
 
 var removeSpecialCharsInExpression = function (s) {
