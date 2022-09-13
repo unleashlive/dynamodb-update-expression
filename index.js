@@ -99,7 +99,8 @@ var deepDiffMapper = function () {
 }();
 
 var removeSpecialChars = function (s) {
-  return s.replace(/\./g, "").replace(/:/g, "").replace(/#/g, "").replace(/\//g, "").replace(" ", "").replace("-", "");
+  // todo why not removeSpecialCharsInExpression?
+  return s.replace(/\./g, "").replace(/:/g, "").replace(/#/g, "").replace(/\//g, "").replace(" ", "").replace(/-/g, "");
 };
 
 var removeSpecialCharsInExpression = function (s) {
